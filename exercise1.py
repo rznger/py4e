@@ -1,0 +1,5 @@
+x = input("Enter Work Hours: ")
+x_int=float(x)
+y = input("Enter Rate: ")
+y_int=float(y)
+print("This is your Gross Pay: " + str(x_int*y_int))
