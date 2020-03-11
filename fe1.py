@@ -1,9 +1,16 @@
 hours=input("Enter Work Hours: ")
-hours=float(hours)
+try:
+    hours=float(hours)
+except:
+    print("ERROR, please enter numeric input.")
+    exit()
 
 rate=input("Enter Rate: ")
-rate=float(rate)
-
+try:
+    rate=float(rate)
+except:
+    print("ERROR, please enter numeric input.")
+    exit()
 
 def computepay(hours, rate):
     if hours>40:
