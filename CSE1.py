@@ -1,17 +1,17 @@
-hours=input("Enter Work Hours: ")
-hours=float(hours)
-
+hours=input("Enter Hours: ")
 rate=input("Enter Rate: ")
-rate=float(rate)
 
+try:
 
-def computepay(hours, rate):
+    hours=float(hours)
+    rate=float(rate)
+
     if hours>40:
         pay=(hours-40)*1.5*rate+40*rate
         return pay
     else:
         pay=hours*rate
         return pay
+    float(pay)
 
-x=computepay(hours, rate)
-print("Your Pay is: " + str(x))
+print("Pay: " + str(pay))
